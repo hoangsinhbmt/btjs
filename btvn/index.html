@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bài 1 -->
+    <p>tính lương nhân viên</p>
+    <input type="text" name=""  onfocus="this.value=''" id="ngaylam" placeholder="nhập ngày làm">
+    <button onclick="tinhluong();">Tính lương</button>
+    <p id="luong"></p>
+    <!-- bài 1 -->
+    <br><br><br><br><br>
+    <!-- bài 2 -->
+   <p>tính giá trị trung bình 5 số</p>
+   <input type="number" name="sothu1"  onfocus="this.value=''" id="so1" placeholder="Nhập số thứ 1">
+   <input type="number" id="so2" onfocus="this.value=''" placeholder="Nhập số thứ 2">
+   <input type="number" id="so3" onfocus="this.value=''" placeholder="Nhập số thứ 3">
+   <input type="number" id="so4" onfocus="this.value=''" placeholder="Nhập số thứ 4">
+   <input type="number" id="so5" onfocus="this.value=''" placeholder="Nhập số thứ 5">
+   <button onclick="tinhtb()">tính</button>
+   <p id="ketqua"></p>
+    <!-- bài 2 -->
+    <br><br><br><br><br>
+    <!-- bài 3 -->
+    <p>quy đổi tiền</p>
+    <input type="text" name=""  onfocus="this.value=''" id="USD" placeholder="nhập số tiền USD">
+    <button onclick="tinhtien();">Tính tiền VND</button>
+    <p id="VND"></p>
+    <!-- bài 3 -->
+    <br><br><br><br><br>
+    <!-- bài 4  -->
+    <p>Tính chu vi diện tích</p>
+    <input type="number" id="chieudai" onfocus="this.value=''" placeholder="chiều dài">
+    <input type="number" id="chieurong" onfocus="this.value=''" placeholder="chiều rộng">
+    <button onclick="tinhhcn();">tính</button>
+    <p id="chuvi"></p>
+    <p id="dientich"></p>
+    <!-- bài 4  -->
+    <script src="./main.js"></script>
+</body>
+</html>
