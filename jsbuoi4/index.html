@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- bài 1 -->
+    <p>sắp xếp số</p>
+    <div class="input-group mb-3">
+        <input type="number" onfocus="this.value=''" class="form-control" id="so1" placeholder="Số thứ 1" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="so2" placeholder="Số thứ 2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="so3" placeholder="Số thứ 3" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" onclick="sapxep()">Sắp xếp</button>
+        </div>
+    </div>
+    <p id="ketqua"></p>
+    <!-- bài 1 -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- bài 2 -->
+    <p>Chào hỏi</p>
+    <select class="form-select" aria-label="Default select example" id="thanhvien">
+        <option selected>chọn thành viên</option>
+        <option value="1">Bố</option>
+        <option value="2">Mẹ</option>
+        <option value="3">Anh</option>
+        <option value="4">Em</option>
+      </select>
+      <button onclick="chaohoi()" class="btn btn-success">Chào hỏi</button>
+       <p id="loichao"></p>
+    <!-- bài 2 -->
+<br><br><br><br><br><br><br><br><br><br>
+<!-- bài 3 -->
+<p>xuất chẵn lẻ</p>
+    <div class="input-group mb-3">
+        <input type="number" onfocus="this.value=''" class="form-control" id="sothu1" placeholder="Số thứ 1" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="sothu2" placeholder="Số thứ 2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="sothu3" placeholder="Số thứ 3" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" onclick="chanle()">Xuất chẵn lẻ</button>
+        </div>
+    </div>
+    <p id="ketqua3"></p>
+<!-- bài 3 -->
+<br><br><br><br><br><br><br><br><br><br>
+<!-- bai4 -->
+<p>xuất tam giác</p>
+    <div class="input-group mb-3">
+        <input type="number" onfocus="this.value=''" class="form-control" id="canh1" placeholder="Cạnh thứ 1" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="canh2" placeholder="Cạnh thứ 2" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="number" onfocus="this.value=''" class="form-control" id="canh3" placeholder="Cạnh thứ 3" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" onclick="tamgiac()">Xuất tam giác</button>
+        </div>
+    </div>
+    <p id="tamgiac"></p>
+<!-- bai4 -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
