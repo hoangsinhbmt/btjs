@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <style>
+     .ketnoi{
+       display: none;
+     }
+    .active{
+       display: block;
+     }
+   </style>
+  </head>
+  <body>
+    <!-- bài 1 -->
+    <p>Quản lý tuyển sinh</p>
+    <input style="max-width:200px;" onfocus="value=''" id="diemchuan" type="text" class="form-control" placeholder="Điểm chuẩn" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="mon1" type="text" class="form-control" placeholder="Điểm thi môn 1" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="mon2" type="text" class="form-control" placeholder="Điểm thi môn 2" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="mon3" type="text" class="form-control" placeholder="Điểm thi môn 3" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="khuvuc" type="text" class="form-control" placeholder="Khu vực xét tuyển" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="doituong" type="text" class="form-control" placeholder="Đối tượng xét tuyển" aria-label="" aria-describedby="basic-addon1">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" onclick="tinhdiem();" type="button">Button</button>
+    </div>
+    <p id="ketqua"></p>
+    <!-- bài 1 -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- bài 2 -->
+    <p>Tính tiền điện</p>
+    <div class="input-group mb-3">
+      <input style="max-width:200px;" onfocus="value=''" id="kwdien" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" onclick="tinhtiendien();" type="button">Button</button>
+      </div>
+    </div>
+    <p id="tiendien"></p>
+    <!-- bài 2 -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- bài 3 -->
+    <p>Tính thuế thu nhập cá nhân</p>
+      <input style="max-width:200px;" onfocus="value=''" id="hovaten" type="text" class="form-control" placeholder="Họ và tên" aria-label="" aria-describedby="basic-addon1">
+      <input style="max-width:200px;" onfocus="value=''" id="thunhap" type="text" class="form-control" placeholder="Tổng thu nhập" aria-label="" aria-describedby="basic-addon1">
+      <input style="max-width:200px;" onfocus="value=''" id="songuoi" type="text" class="form-control" placeholder="Số người phụ thuộc" aria-label="" aria-describedby="basic-addon1">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" onclick="tinhthue();" type="button">Button</button>
+      </div>
+    <p id="tienthue"></p>
+    <!-- bài 3 -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <!-- bài 4 -->
+    <p>Tính tiền cáp</p>
+    <input style="max-width:200px;" onfocus="value=''" id="makh" type="text" class="form-control" placeholder="Mã khách hàng" aria-label="" aria-describedby="basic-addon1">
+    <select class="form-select" aria-label="Default select example" id="loaikhachhang" onchange="loaikh();">
+        <option selected disabled>chọn loại khách hàng</option>
+        <option value="1">nhà dân</option>
+        <option value="2">doanh nghiệp</option>
+    </select>
+    <br>
+    <input style="max-width:200px;" onfocus="value=''" id="soketnoi" type="text" class="form-control ketnoi" placeholder="Số kết nối" aria-label="" aria-describedby="basic-addon1">
+    <input style="max-width:200px;" onfocus="value=''" id="sokenhcaocap" type="text" class="form-control" placeholder="Số kênh cao cấp" aria-label="" aria-describedby="basic-addon1">
+     
+      <button onclick="tinhtiencap()" class="btn btn-success">Tính tiền</button>
+       <p id="tiencap"></p>
+    <!-- bài 4 -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./bai1.js"></script>
+    <script src="./bai2.js"></script>
+    <script src="./bai3.js"></script>
+    <script src="./bai4.js"></script>
+  </body>
+</html>
