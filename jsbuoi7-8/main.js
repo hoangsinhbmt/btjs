@@ -29,13 +29,11 @@ function timsonhonhat(arr) {
 function timsoduongnhonhat(arr) {
   let min = arr[0];
   for (var i = 1; i < arr.length; i++) {
-    if (arr[i] % 2 == 0 && min > arr[i]) {
-      {
-        min = arr[i];
-      }
-    }
+    if((min < 0 || min > arr[i]) && arr[i] > 0 ) {
+      min = arr[i];
   }
-  return min;
+  }
+  return min
 }
 function nhapmang() {
   var numBer = document.getElementById("txtNumber").value * 1;
