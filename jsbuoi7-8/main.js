@@ -53,15 +53,19 @@ function sapxepmang(arr) {
   }
   return arr;
 }
-function timsonguyento(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    for (let j = 2; j < arr[i]; j++) {
-      if (arr[i] % j == 0) {
-        return -1;
-      } else return arr[i];
+function timsonguyento(n) {
+  let flag = 1;
+  if (n <= 2) return (flag = 0);
+  let i = 2;
+  while (i < n) {
+    if (n % i == 0) {
+      flag = 0;
       break;
     }
+    i++;
   }
+
+  return flag;
 }
 
 function nhapmang() {
@@ -87,9 +91,11 @@ function xuatmang() {
   kq.innerHTML += "<div></div>" + "Số chẵn cuối cùng là: " + sochancuoicung;
   var sapxep = sapxepmang(mang);
   kq.innerHTML += "<div></div>" + "Sắp xếp mảng: [ " + sapxep + " ]";
-  var songuyento = timsonguyento(mang);
-  if (songuyento == undefined) {
-    songuyento = -1;
+  var songuyento;
+  for (let i = 0; i < mang.length; i++) {
+    if (timsonguyento(mang[i]) == 1) {
+      songuyento = mang[i];
+    } else songuyento = -1;
   }
   kq.innerHTML += "<div></div>" + "Số nguyên tố đầu tiên: " + songuyento;
 }
