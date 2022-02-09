@@ -2,7 +2,7 @@ var mang = [];
 function tongsoduong(num) {
   var sum = 0;
   num.map(function (item) {
-    if (item % 2 == 0) {
+    if (item > 0) {
       sum += item;
     }
   });
@@ -10,9 +10,7 @@ function tongsoduong(num) {
 }
 function demsoduong(arr) {
   var soDuongArr = arr.filter(function (item) {
-    while (item != 0) {
-      return item % 2 == 0;
-    }
+    return item > 0;
   });
   return soDuongArr.length;
 }
@@ -64,8 +62,19 @@ function timsonguyento(n) {
     }
     i++;
   }
-
   return flag;
+}
+function demsonguyen(arr) {
+  var soNguyenArr = arr.filter(function (item) {
+    return item % 1 ==0;
+  });
+  return soNguyenArr.length;
+}
+function demsoam(arr) {
+  var soAmArr = arr.filter(function (item) {
+    return item<0;
+  });
+  return soAmArr.length;
 }
 
 function nhapmang() {
@@ -98,6 +107,22 @@ function xuatmang() {
     } else songuyento = -1;
   }
   kq.innerHTML += "<div></div>" + "Số nguyên tố đầu tiên: " + songuyento;
+  var songuyen = demsonguyen(mang);
+  kq.innerHTML += "<div></div>" + "Số lượng số nguyên là: " + songuyen;
+
+  var demSoAm =demsoam(mang);
+  console.log(demSoAm);
+  console.log(demSoDuong);
+
+  if(demSoAm > demSoDuong){
+    kq.innerHTML += "<div></div>" + "Số lượng số âm nhiều hơn số dương "
+  }
+  else if(demSoAm < demSoDuong){
+    kq.innerHTML += "<div></div>" + "Số lượng số dương nhiều hơn số âm "
+  }
+  else{
+    kq.innerHTML += "<div></div>" + "Số lượng số âm bằng số dương "
+  }
 }
 
 function doicho() {
