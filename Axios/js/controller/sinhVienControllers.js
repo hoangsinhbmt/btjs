@@ -9,7 +9,7 @@ let sinhVienControllers = {
                                 <td>${item.email}</td>
                                 <td>${item.getDiemTb()}</td>
                                 <td>
-                                <button class="btn btn-success" onclick="suaSV(${item.id,item._data});"> Sua </button>
+                                <button class="btn btn-success" onclick="laySV(${item.id});"> Sua </button>
                                 <button class="btn btn-danger" onclick="xoaSV(${item.id});"> Xoa </button>
                                 </td>
                            </tr>`;
@@ -27,11 +27,11 @@ let sinhVienControllers = {
 
     return {
       name: tenSV,
-      id: maSV,
       email: emailSV,
       toan: diemToan,
       ly: diemLy,
       hoa: diemHoa,
+      id: maSV,
     };
   },
 };
