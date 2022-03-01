@@ -128,7 +128,7 @@ function xuatmang() {
 function doicho() {
   var kq = document.querySelector("#ketqua2");
   var Num1 = document.getElementById("txtNumber1").value * 1;
-  var Num2 = document.getElementById("txtNumber2").value * 1;
+  var Num2 = document.getElementById("txtNumber2").value * 1; 
   const tmp = mang[Num1];
   mang[Num1] = mang[Num2];
   mang[Num2] = tmp;
